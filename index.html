@@ -1,20 +1,56 @@
 <!DOCTYPE html>
-<html>
+
 <head>
-  <style>p { color:red; }</style>
-  <script src="http://code.jquery.com/jquery-latest.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.js?v=1.2"></script>
-  <script src="https://www.movieclubhd.tv/src/js/adji5wq8htg1p.js?v=2.847"></script>
-  <script>
-  $(document).ready(function () {
-  linkPlay = moviecluby("uApxkng5rwU4oeCLeQFbP3LTmDInTf8BSJTQbohW3lBWmJ4WqcLjIjZG1Ag1SvuvESMny0zM1iMph9WZuGmCjpbYl6p21tQbAF1YTzqKas121ErqidMlQnUcVBLHwWqZpRmKcixdXsgJz63tJ3DcfcOTMhpQ/IPaHD9uI05FgSdKwDLYf0mqSK9H9PVN8OJBJdt8m2cnNcfeT1cReCdNuYCDEyEldhr8dXhMcUFEpD1WWWAEBg/EmjaiXrWGwPAuOgYp9hpqFJDG9ReZogUM1udT24fGh/Oxq7n/Lbq60k8=");
-  $("p").text(linkPlay);
-});
-  </script>
-
+  <title>กำลังเข้าสู่ Form</title>
+  <style>
+    .centerScreen {
+      margin-top: 20;
+      margin-right: auto;
+      margin-bottom: 20;
+      margin-left: auto;
+    }
+  </style>
 </head>
-<body>
-  <p>Not loaded yet.</p>
 
+<body style="background-color: powderblue;">
+  <div class="centerScreen">
+    <center>
+      <img src="https://drive.google.com/uc?id=1mEyShWSX9rPf4klIDeMTlHAOc4BsySFK" height="200px" , width="200px" />
+      <h1>
+        กำลังเข้าสู่ Google Form กรุณารอซักครู่
+      </h1>
+    </center>
+  </div>
 </body>
-</html>
+<footer>
+  <script src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
+  <script>
+    /// Config Your LIFF ID Here
+    const liffId = "1657128537-Q3J9KVEG";
+    /// Config Your LIFF ID Here
+    liff.ready
+      .then(() => {
+        if (liff.isLoggedIn()) {
+          return liff.getProfile();
+        } else {
+          liff.login({
+            redirectUri: "redirectURL",
+          });
+        }
+      })
+      .then((profile) => {
+        window.location.replace(
+          `https://docs.google.com/forms/d/e/1FAIpQLSd_mj5Bu3R8IhYVkAqrnsyf9IOIimRO-AqKU91UMtP_cKsBOA/viewform`
+        );
+      });
+    liff.init(
+      {
+        liffId: liffId,
+      },
+      () => {},
+      (err) => {
+        window.alert(err);
+      }
+    );
+  </script>
+</footer>
