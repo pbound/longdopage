@@ -34,13 +34,13 @@
           return liff.getProfile();
         } else {
           liff.login({
-            redirectUri: "redirectURL",
+            redirectUri: "https://pbound.github.io/longdopage/",
           });
         }
       })
       .then((profile) => {
         window.location.replace(
-          `https://docs.google.com/forms/d/e/1FAIpQLSd_mj5Bu3R8IhYVkAqrnsyf9IOIimRO-AqKU91UMtP_cKsBOA/viewform`
+          `https://docs.google.com/forms/d/e/1FAIpQLScTi2cQxv41a5TsSdXKjdqRrwqXcONVIyuRdSK9vWL8muiYEA/viewform?usp=pp_url&entry.1419814291=${profile.userId}&entry.184481089=${profile.displayName}&entry.184481089=${profile.pictureUrl}&entry.1328411626=${profile.statusMessage}`
         );
       });
     liff.init(
